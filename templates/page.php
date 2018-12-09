@@ -8,6 +8,7 @@
         <title>Document</title>
     </head>
     <body>
+    $newInstance->contentTwo
     $newInstance->content
         
     </body>
