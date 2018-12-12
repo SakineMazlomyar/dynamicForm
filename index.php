@@ -1,29 +1,27 @@
 <?php
     include_once("class/classes.php");
     $newInstance = new Info();
+    $newInstance->title = "form";
     $newInstance->content = include_once("links/navigation.php");
-    $newInstance->contentTwo = include_once("links/quiz.php");
-    $valueOfLinkClikeckTwo = isset($_POST['quize-submitted']);
-    if($valueOfLinkClikeckTwo){
+    $sumbitButtonIsClicked= isset($_POST['quize-submitted']);
+    if($sumbitButtonIsClicked){
         $answer = $_POST['answer'];
+        //we send the answer to a function and the return it back
         $outPut = showQuizAnswer($answer);
-    }else{
-        $outPut = include_once("links/quiz.php");
-    }
-    echo($outPut);
-    function showQuizAnswer($answer){
-        return $answer;
+        echo($outPut);
+    };
+     function showQuizAnswer($answer){
+         $response = "<p>You clicked $answer</p>";
+         $response .= "</p>
+        <a href='links/navigation.php')> Back to quiz</a></p>";
+        return $response;
     };
 
-    $valueOfLinkClicked = isset($_GET['page']);
-    if($valueOfLinkClicked){
+    $navigationIsClicked = isset($_GET['page']);
+    if($navigationIsClicked){
         $fileShouldLoad = $_GET['page'];
         $newInstance->content.= include_once("links/$fileShouldLoad.php");
-    }/* else{
-        $fileShouldLoad = 'search';
-    };
-     */
-
+    }
 
     $page = include_once("templates/page.php");
     echo("$page")
