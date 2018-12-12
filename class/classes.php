@@ -1,6 +1,8 @@
 <?php
     class Info{
-        public $contentTwo = "";
+        
+        public $title = "";
+        public $content = "";
     }
 
 ?>
