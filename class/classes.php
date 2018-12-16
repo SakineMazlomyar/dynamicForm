@@ -3,6 +3,8 @@
         
         public $title = "";
         public $content = "";
+        public $form = "";
+        public $css = "";
     }
 
 ?>
