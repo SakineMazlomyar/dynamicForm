@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+nav{
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+form{
+    position: relative;
+    top: 10em;
+    background-color: darkgray;
+
+}
+h4{
+    position: relative;
+    top: 11em;
+}
