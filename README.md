@@ -1,4 +1,4 @@
-# dynamicForm
+# DynamicForm
 This is a test for making a dynamic form by PHP.
-# test the code
+# How to test this code
 Test the code by uploading the code and run on a server
